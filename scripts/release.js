@@ -145,14 +145,6 @@ async function syncWithBranch(branch, version) {
   await execFile('git', ['add', '.'], {
     cwd: monorepoRoot,
   });
-
-  // only commits if there were staged changes with differences
-  // between the two branches
-  await execFile(
-    'git',
-    ['commit', '--no-allow-empty', `-m`, `v${version} - sync with ${branch}`],
-    { cwd: monorepoRoot }
-  ).catch((err) => err);
 }
 
 async function getCompassPackageVersion() {
