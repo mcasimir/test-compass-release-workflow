@@ -1,0 +1,25 @@
+{
+  "name": "test-compass-release-workflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcasimir/test-compass-release-workflow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcasimir/test-compass-release-workflow/issues"
+  },
+  "homepage": "https://github.com/mcasimir/test-compass-release-workflow#readme",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "make-fetch-happen": "^11.1.1",
+    "semver": "^7.5.3"
+  }
+}
