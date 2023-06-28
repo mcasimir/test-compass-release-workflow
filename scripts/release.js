@@ -157,20 +157,10 @@ async function getCompassPackageVersion() {
   return JSON.parse(await fs.readFile(compassPackageJsonPath)).version;
 }
 
-async function gitCheckout(releaseBranchName, startingBranch) {
-  try {
-    await execFile('git', ['checkout', releaseBranchName], {
-      cwd: monorepoRoot,
-    });
-  } catch (e) {
-    await execFile(
-      'git',
-      ['checkout', '-b', releaseBranchName, startingBranch],
-      {
-        cwd: monorepoRoot,
-      }
-    );
-  }
+async function gitCheckout(releaseBranchName) {
+  await execFile('git', ['checkout', releaseBranchName], {
+    cwd: monorepoRoot,
+  });
 }
 
 async function bumpAndPush(nextVersion, releaseBranch) {
