@@ -1,6 +1,6 @@
 {
   "name": "fake-compass",
-  "version": "1.38.1-beta.3",
+  "version": "1.38.1",
   "description": "",
   "main": "index.js",
   "scripts": {
