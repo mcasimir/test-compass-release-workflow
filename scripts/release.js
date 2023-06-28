@@ -14,7 +14,7 @@ const { program } = require('commander');
 const BETA_RELEASE_BRANCH = 'beta-releases';
 const GA_RELEASE_BRANCH = 'ga-releases';
 
-if (process.env.GITHUB_ACTIONS === 'true') {
+if (process.env.GITHUB_ACTIONS !== 'true') {
   throw new Error('this script is meant to be run from CI');
 }
 
