@@ -119,14 +119,11 @@ program.parseAsync();
 // we don't destroy the history of the release and incoming branches,
 // and we never incur in conflicts.
 async function syncWithBranch(branch, version) {
-  // await execFile(
-  //   'git',
-  //   ['fetch', 'origin', branch]
-  // );
+  const remoteBranch = branch.startsWith('origin/') ? branch : `origin/${branch}`;
 
   await execFile(
     'git',
-    ['merge', '--no-ff', '--strategy-option=theirs', branch],
+    ['merge', '--no-ff', '--strategy-option=theirs', remoteBranch],
     {
       cwd: monorepoRoot,
     }
@@ -141,7 +138,7 @@ async function syncWithBranch(branch, version) {
   await execFile('git', ['rm', '-r', '*'], {
     cwd: monorepoRoot,
   });
-  await execFile('git', ['checkout', branch, '--', '.'], {
+  await execFile('git', ['checkout', remoteBranch, '--', '.'], {
     cwd: monorepoRoot,
   });
 

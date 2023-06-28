@@ -45,8 +45,6 @@ jobs:
         env:
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
         run: |
-          git fetch --all
-
           node scripts/release.js ga \
             --release-ticket="${{ github.event.inputs.releaseTicket }}" \
             --merge-branch="${{ github.event.inputs.mergeBranch || 'beta-releases' }}"
