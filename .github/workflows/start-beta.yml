@@ -44,6 +44,6 @@ jobs:
       - name: Start Release
         run: |
           node scripts/release.js beta \
-            --merge-branch="${{ github.event.inputs.mergeBranch || 'main' }}"
+            --merge-branch="${{ github.event.inputs.mergeBranch || 'main' }}" thiswouldcauseaconflict
             --next-ga="${{ github.event.inputs.overrideNextGa }}"
 
