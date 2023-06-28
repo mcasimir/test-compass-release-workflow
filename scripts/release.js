@@ -119,10 +119,10 @@ program.parseAsync();
 // we don't destroy the history of the release and incoming branches,
 // and we never incur in conflicts.
 async function syncWithBranch(branch, version) {
-  await execFile(
-    'git',
-    ['fetch', 'origin', branch]
-  );
+  // await execFile(
+  //   'git',
+  //   ['fetch', 'origin', branch]
+  // );
 
   await execFile(
     'git',
