@@ -41,7 +41,7 @@ jobs:
         run: |
           echo "# Change Log" > CHANGELOG.md
           echo "" >> CHANGELOG.md
-
+          gh repo set-default mongodb-js/vscode
           tags=$(gh api repos/mongodb-js/vscode/releases | jq -r .[].tag_name | grep -v internal | grep -v pre | grep -v beta)
 
           # NOTE: here the quotes around $tags are necessary
