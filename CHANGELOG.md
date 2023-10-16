@@ -1,5 +1,16 @@
 # Change Log
 
+## [v1.3.1](https://github.com/mongodb-js/vscode/releases/tag/v1.3.1) - 2023-10-09
+
+## What's Changed
+* fix(playgrounds): stringify non-string types for playground output VSCODE-466 by @Anemy in https://github.com/mongodb-js/vscode/pull/590
+* feat: update mongosh to 2.0.0 and driver to 6.0.0 VSCODE-453 by @addaleax in https://github.com/mongodb-js/vscode/pull/592
+* feat(autocomplete): introduce $vectorSearch aggregation stage to 7.1 and 7.0.x COMPASS-7064 by @mcasimir in https://github.com/mongodb-js/vscode/pull/593
+* fix: resolve SRV hostname before passing it to mongodb-cloud-info VSCODE-442 by @addaleax in https://github.com/mongodb-js/vscode/pull/594
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.2.1...v1.3.1
+
+
 ## [v1.2.1](https://github.com/mongodb-js/vscode/releases/tag/v1.2.1) - 2023-08-23
 
 ## What's Changed
@@ -426,18 +437,5 @@ To dig deeper please feel free to follow the links mentioned below:
 - Fixed an issue with connecting to mongodb through the shell while using SSH
 - Fixed a connectivity issue with playgrounds and SSH connections
 - Fixed an issue with having a babel config in a workspace root
-
-
-## [v0.0.2](https://github.com/mongodb-js/vscode/releases/tag/v0.0.2) - 2020-05-13
-
-This is the marketplace preview release of MongoDB for VS Code.
-
-* MongoDB data explorer
-* MongoDB Playgrounds
-* Quick access to the MongoDB Shell
-
-Take a look at [README.md](https://github.com/mongodb-js/vscode/blob/master/README.md) for an overview of the features.
-
-This release can be found on the VS Code marketplace: https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode
 
 
