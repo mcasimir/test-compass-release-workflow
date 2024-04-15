@@ -41,7 +41,7 @@ program
     console.info(`Found ${nextGa} as next ga version in Jira`);
 
     // checks out the beta branch (from main if it did not exist before)
-    await gitCheckout(BETA_RELEASE_BRANCH, 'main');
+    await gitCheckout(BETA_RELEASE_BRANCH);
 
     const currentCompassPackageVersion = await getCompassPackageVersion();
 
@@ -93,7 +93,7 @@ program
     console.info(`Found ${nextGa} as fixVersion in ${options.releaseTicket}`);
 
     // checks out the ga branch (from beta if it did not exist before)
-    await gitCheckout(GA_RELEASE_BRANCH, BETA_RELEASE_BRANCH);
+    await gitCheckout(GA_RELEASE_BRANCH);
     await syncWithBranch(options.mergeBranch, nextGa);
 
     const currentCompassPackageVersion = await getCompassPackageVersion();
@@ -119,9 +119,11 @@ program.parseAsync();
 // we don't destroy the history of the release and incoming branches,
 // and we never incur in conflicts.
 async function syncWithBranch(branch, version) {
+  const remoteBranch = branch.startsWith('origin/') ? branch : `origin/${branch}`;
+
   await execFile(
     'git',
-    ['merge', '--no-ff', '--strategy-option=theirs', branch],
+    ['merge', '--no-ff', '--strategy-option=theirs', remoteBranch],
     {
       cwd: monorepoRoot,
     }
@@ -136,41 +138,23 @@ async function syncWithBranch(branch, version) {
   await execFile('git', ['rm', '-r', '*'], {
     cwd: monorepoRoot,
   });
-  await execFile('git', ['checkout', branch, '--', '.'], {
+  await execFile('git', ['checkout', remoteBranch, '--', '.'], {
     cwd: monorepoRoot,
   });
 
   await execFile('git', ['add', '.'], {
     cwd: monorepoRoot,
   });
-
-  // only commits if there were staged changes with differences
-  // between the two branches
-  await execFile(
-    'git',
-    ['commit', '--no-allow-empty', `-m`, `v${version} - sync with ${branch}`],
-    { cwd: monorepoRoot }
-  ).catch((err) => err);
 }
 
 async function getCompassPackageVersion() {
   return JSON.parse(await fs.readFile(compassPackageJsonPath)).version;
 }
 
-async function gitCheckout(releaseBranchName, startingBranch) {
-  try {
-    await execFile('git', ['checkout', releaseBranchName], {
-      cwd: monorepoRoot,
-    });
-  } catch (e) {
-    await execFile(
-      'git',
-      ['checkout', '-b', releaseBranchName, startingBranch],
-      {
-        cwd: monorepoRoot,
-      }
-    );
-  }
+async function gitCheckout(branchName) {
+  await execFile('git', ['checkout', branchName], {
+    cwd: monorepoRoot,
+  });
 }
 
 async function bumpAndPush(nextVersion, releaseBranch) {
