@@ -1,6 +1,6 @@
 const { exec } = require('child_process');
 
-function unsafeExec(input) {
+function echo(input) {
     // This function executes a command that includes user input without sanitization.
     const command = `echo ${input}`;
     exec(command, (error, stdout, stderr) => {
