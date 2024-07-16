@@ -1,5 +1,15 @@
 # Change Log
 
+## [v1.6.1](https://github.com/mongodb-js/vscode/releases/tag/v1.6.1) - 2024-07-15
+
+## What's Changed
+* fix: disconnect extension when server is closed VSCODE-536 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/734
+* chore(deps): bump mongosh VSCODE-548 by @mabaasit in https://github.com/mongodb-js/vscode/pull/752
+* fix: remove changelog from the bundle VSCODE-551 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/758
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.6.0...v1.6.1
+
+
 ## [v1.6.0](https://github.com/mongodb-js/vscode/releases/tag/v1.6.0) - 2024-04-23
 
 ## What's Changed
@@ -438,20 +448,5 @@ To dig deeper please feel free to follow the links mentioned below:
 - Updated our mongosh dependency to 0.4.2 to bring more functionality to playgrounds
 ### Fixed
 - Fixed indexes expanded state caching in the connection explorer panel tree view
-
-
-## [v0.1.1](https://github.com/mongodb-js/vscode/releases/tag/v0.1.1) - 2020-08-10
-
-### Added
-
-- Added a search for documents playground shortcut in the tree explorer view
-- Added a copy field name right click action in a collection's schema in the tree explorer view
-- Added a document count for a collection in the tree view (with hover tooltip for the full count)
-- Added the ability to change the current connection when in an open playground file by using the codelens on the first line of the playground
-
-### Changed
-
-- Allow connecting to a new connection while already connecting to another connection
-- Allow removing a new connection while it is connecting
 
 
