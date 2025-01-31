@@ -1,5 +1,15 @@
 # Change Log
 
+## [v1.12.0](https://github.com/mongodb-js/vscode/releases/tag/v1.12.0) - 2025-01-30
+
+## What's Changed
+* feat(tree-explorer): add ability to set preset connections in settings.json VSCODE-665 by @gagik in https://github.com/mongodb-js/vscode/pull/909
+* feat(participant): add disambiguation examples to answer MongoDB queries in Copilot by @GaurabAryal in https://github.com/mongodb-js/vscode/pull/911
+* fix(playground): fix playground error when returning a function declaration VSCODE-669 by @nirinchev in https://github.com/mongodb-js/vscode/pull/925
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.11.0...v1.12.0
+
+
 ## [v1.11.0](https://github.com/mongodb-js/vscode/releases/tag/v1.11.0) - 2024-12-11
 
 ## What's Changed
@@ -407,12 +417,5 @@ To dig deeper please feel free to follow the links mentioned below:
 
 - Removed extra newline character at the end of the link in the generated changelog (VSCODE-282, #332)
 - Fixed image location referencing an incorrect branch in the generated VSCode marketplace README (VSCODE-281, #333)
-
-
-## [v0.6.9](https://github.com/mongodb-js/vscode/releases/tag/v0.6.9) - 2021-07-27
-
-### Fixed
-
-- Fixed image locations in the published VSCode marketplace README resolving to an incorrect branch (VSCODE-281, #331)
 
 
