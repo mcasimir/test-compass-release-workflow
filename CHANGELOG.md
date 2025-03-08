@@ -1,5 +1,14 @@
 # Change Log
 
+## [v1.12.1](https://github.com/mongodb-js/vscode/releases/tag/v1.12.1) - 2025-03-07
+
+## What's Changed
+* chore(deps): bump remaining driver, shell, compass deps VSCODE-680 by @addaleax in https://github.com/mongodb-js/vscode/pull/981
+* fix: hide preset connections from the Remove Connection command VSCODE-674 by @gagik in https://github.com/mongodb-js/vscode/pull/969
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.12.0...v1.12.1
+
+
 ## [v1.12.0](https://github.com/mongodb-js/vscode/releases/tag/v1.12.0) - 2025-01-30
 
 ## What's Changed
@@ -409,13 +418,5 @@ To dig deeper please feel free to follow the links mentioned below:
 
 - Fixed TLS/SSL files not resolving correctly when connecting with WSL(Windows Subsystem for Linux) (VSCODE-284, #343)
 - Fixed playgrounds not loading SSL/TLS files correctly with new MongoDB node driver (VSCODE-292, #347)
-
-
-## [v0.6.10](https://github.com/mongodb-js/vscode/releases/tag/v0.6.10) - 2021-07-27
-
-### Fixed
-
-- Removed extra newline character at the end of the link in the generated changelog (VSCODE-282, #332)
-- Fixed image location referencing an incorrect branch in the generated VSCode marketplace README (VSCODE-281, #333)
 
 
