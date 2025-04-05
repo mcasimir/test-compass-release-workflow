@@ -1,5 +1,14 @@
 # Change Log
 
+## [v1.13.0](https://github.com/mongodb-js/vscode/releases/tag/v1.13.0) - 2025-04-04
+
+## What's Changed
+* chore(telemetry): append user anonymousId & connectionId to appName passed to server COMPASS-8591 by @gagik in https://github.com/mongodb-js/vscode/pull/982
+* feat: handle deep links to commands VSCODE-683 VSCODE-684 VSCODE-685 by @nirinchev in https://github.com/mongodb-js/vscode/pull/995
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.12.1...v1.13.0
+
+
 ## [v1.12.1](https://github.com/mongodb-js/vscode/releases/tag/v1.12.1) - 2025-03-07
 
 ## What's Changed
@@ -404,19 +413,5 @@ To dig deeper please feel free to follow the links mentioned below:
 ### Fixed
 
 - Fixed opening files with special characters in their _ids (VSCODE-276, #342)
-
-
-## [v0.6.12](https://github.com/mongodb-js/vscode/releases/tag/v0.6.12) - 2021-10-04
-
-### Changed
-
-- Replaced code lenses with code actions for partially running playgrounds (VSCODE-247, #318)
-- Updated the MongoDB driver to 4.1.2 and mongosh to 1.0.4 (VSCODE-270, #337)
-- Updated the create collection time-series template to include granularity (VSCODE-292, #344)
-
-### Fixed
-
-- Fixed TLS/SSL files not resolving correctly when connecting with WSL(Windows Subsystem for Linux) (VSCODE-284, #343)
-- Fixed playgrounds not loading SSL/TLS files correctly with new MongoDB node driver (VSCODE-292, #347)
 
 
