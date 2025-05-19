@@ -1,5 +1,27 @@
 # Change Log
 
+## [v1.13.2](https://github.com/mongodb-js/vscode/releases/tag/v1.13.2) - 2025-05-07
+
+* chore(deps): bump the compass group with 3 updates by @dependabot in https://github.com/mongodb-js/vscode/pull/1035
+* chore(deps): bump @mongodb-js/connection-info from 0.11.9 to 0.12.0 by @dependabot in https://github.com/mongodb-js/vscode/pull/1039
+* chore: move device_id to common properties by @gagik in https://github.com/mongodb-js/vscode/pull/1038
+
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.13.1...v1.13.2
+
+
+## [v1.13.1](https://github.com/mongodb-js/vscode/releases/tag/v1.13.1) - 2025-05-06
+
+## What's Changed
+* chore(deps): bump mongodb-schema from 12.5.2 to 12.6.2 by @dependabot in https://github.com/mongodb-js/vscode/pull/1006
+* chore(deps): bump the compass group with 6 updates by @dependabot in https://github.com/mongodb-js/vscode/pull/1007
+* chore(deps): bump the mongosh group with 10 updates by @dependabot in https://github.com/mongodb-js/vscode/pull/1009
+* chore(deps-dev): bump @mongodb-js/oidc-plugin from 1.1.6 to 1.1.7 by @dependabot in https://github.com/mongodb-js/vscode/pull/1032
+* chore(deps): bump the mongosh group with 7 updates by @dependabot in https://github.com/mongodb-js/vscode/pull/1033
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.13.0...v1.13.1
+
+
 ## [v1.13.0](https://github.com/mongodb-js/vscode/releases/tag/v1.13.0) - 2025-04-04
 
 ## What's Changed
@@ -392,26 +414,5 @@ To dig deeper please feel free to follow the links mentioned below:
 
 - Use new data service and connection model (VSCODE-297, #377)
 - Use the connection-secrets module to protect all secrets (VSCODE-313). Addresses CVE-2021-32039 - Users with appropriate file access may be able to access unencrypted user credentials saved by MongoDB Extension for VS Code in a binary file. These credentials may be used by malicious attackers to perform unauthorized actions. This vulnerability affects all MongoDB Extension for VS Code including and prior to version 0.7.0.
-
-
-## [v0.7.0](https://github.com/mongodb-js/vscode/releases/tag/v0.7.0) - 2021-12-01
-
-### Added
-- Added export to language for selected query content and aggregation content in playgrounds (VSCODE-296, #366)
-
-
-## [v0.6.14](https://github.com/mongodb-js/vscode/releases/tag/v0.6.14) - 2021-10-25
-
-### Added
-
-- Added syntax support for new 5.1 features (VSCODE-306, VSCODE-305, VSCODE-304, VSCODE-302, #357, #359)
-
-### Changed
-
-- Updated MongoDB branding (VSCODE-297, #358)
-
-### Fixed
-
-- Fixed opening files with special characters in their _ids (VSCODE-276, #342)
 
 
