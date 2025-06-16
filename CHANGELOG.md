@@ -1,5 +1,13 @@
 # Change Log
 
+## [v1.13.3](https://github.com/mongodb-js/vscode/releases/tag/v1.13.3) - 2025-06-09
+
+## What's Changed
+* chore: allow opting out of the welcome screen. This is mostly useful when including the extension in a preconfigured environment (e.g. Github Codespaces) where displaying the welcome screen is undesirable. VSCODE-697 by @nirinchev in https://github.com/mongodb-js/vscode/pull/1053
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.13.2...v1.13.3
+
+
 ## [v1.13.2](https://github.com/mongodb-js/vscode/releases/tag/v1.13.2) - 2025-05-07
 
 * chore(deps): bump the compass group with 3 updates by @dependabot in https://github.com/mongodb-js/vscode/pull/1035
@@ -406,13 +414,5 @@ To dig deeper please feel free to follow the links mentioned below:
 - Bumped our MongoDB node driver and mongosh dependencies (#385)
 - Updated our connection logic to share the connection logic from mongosh (#390)
 - Exposed export to Ruby as a language in the export to language feature (VSCODE-323, #391) 
-
-
-## [v0.8.0](https://github.com/mongodb-js/vscode/releases/tag/v0.8.0) - 2022-01-19
-
-### Changed
-
-- Use new data service and connection model (VSCODE-297, #377)
-- Use the connection-secrets module to protect all secrets (VSCODE-313). Addresses CVE-2021-32039 - Users with appropriate file access may be able to access unencrypted user credentials saved by MongoDB Extension for VS Code in a binary file. These credentials may be used by malicious attackers to perform unauthorized actions. This vulnerability affects all MongoDB Extension for VS Code including and prior to version 0.7.0.
 
 
