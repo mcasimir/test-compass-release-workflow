@@ -1,5 +1,17 @@
 # Change Log
 
+## [v1.14.2](https://github.com/mongodb-js/vscode/releases/tag/v1.14.2) - 2025-10-07
+
+## What's Changed
+* fix: snyk will now scan vscode project by @himanshusinghs in https://github.com/mongodb-js/vscode/pull/1136
+* chore: update CHANGELOG.md by @mongodb-devtools-bot[bot] in https://github.com/mongodb-js/vscode/pull/1148
+* chore: update mongodb-mcp-server to fix yargs-parser problem by @himanshusinghs in https://github.com/mongodb-js/vscode/pull/1153
+* chore: disable snyk vuln ticket generation by @himanshusinghs in https://github.com/mongodb-js/vscode/pull/1154
+
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.14.1...v1.14.2
+
+
 ## [v1.14.1](https://github.com/mongodb-js/vscode/releases/tag/v1.14.1) - 2025-10-06
 
 ## What's Changed
@@ -430,24 +442,5 @@ To dig deeper please feel free to follow the links mentioned below:
 
 
 **Full Changelog**: https://github.com/mongodb-js/vscode/compare/v0.9.5...v0.10.0
-
-
-## [v0.9.5](https://github.com/mongodb-js/vscode/releases/tag/v0.9.5) - 2022-10-18
-
-## Added
-
-* feat: add command to generate objectid by @SethFalco in https://github.com/mongodb-js/vscode/pull/416
-* feat: update MongoDB driver to ^4.10.0 VSCODE-342 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/439
-* feat(playground): Add `clusteredIndex` option to createCollection playground template VSCODE-330 by @Anemy in https://github.com/mongodb-js/vscode/pull/409
-
-## Fixed
-
-* fix: correct order of enum docs by @SethFalco in https://github.com/mongodb-js/vscode/pull/426
-* fix: export to language actions appear for regular playground results VSCODE-334 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/434
-
-## New Contributors
-* @SethFalco made their first contribution in https://github.com/mongodb-js/vscode/pull/418
-
-**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v0.9.3...v0.9.5
 
 
