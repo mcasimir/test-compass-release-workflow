@@ -1,5 +1,17 @@
 # Change Log
 
+## [v1.14.3](https://github.com/mongodb-js/vscode/releases/tag/v1.14.3) - 2025-12-09
+
+## What's Changed
+* chore: Prompt user to connect when running a playground VSCODE-686 by @tculig in https://github.com/mongodb-js/vscode/pull/1185
+
+## New Contributors
+* @dlemstra made their first contribution in https://github.com/mongodb-js/vscode/pull/1158
+* @tculig made their first contribution in https://github.com/mongodb-js/vscode/pull/1169
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.14.2...v1.14.3
+
+
 ## [v1.14.2](https://github.com/mongodb-js/vscode/releases/tag/v1.14.2) - 2025-10-07
 
 ## What's Changed
@@ -428,19 +440,5 @@ To dig deeper please feel free to follow the links mentioned below:
 * @himanshusinghs made their first contribution in https://github.com/mongodb-js/vscode/pull/467
 
 **Full Changelog**: https://github.com/mongodb-js/vscode/compare/v0.10.0...v0.11.1
-
-
-## [v0.10.0](https://github.com/mongodb-js/vscode/releases/tag/v0.10.0) - 2023-01-12
-
-## What's Changed
-* feat(tree-explorer): Add open and copy document tree view context menu items VSCODE-348 by @Anemy in https://github.com/mongodb-js/vscode/pull/445
-* feat(tree-explorer): add delete document context menu item VSCODE-349 by @Anemy in https://github.com/mongodb-js/vscode/pull/452
-* fix(connections): improve disconnected action error messages by @Anemy in https://github.com/mongodb-js/vscode/pull/453
-* feat(tree-explorer): add clone document context menu item to document item in tree explorer VSCODE-350 by @Anemy in https://github.com/mongodb-js/vscode/pull/458
-* fix(playgrounds): handle out of memory playground worker VSCODE-269 by @Anemy in https://github.com/mongodb-js/vscode/pull/459
-* chore(deps): bump mongosh to 1.6.2, driver to 4.13.0 VSCODE-357 by @Anemy in https://github.com/mongodb-js/vscode/pull/465
-
-
-**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v0.9.5...v0.10.0
 
 
