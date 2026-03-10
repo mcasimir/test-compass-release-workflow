@@ -1,5 +1,39 @@
 # Change Log
 
+## [v1.15.1](https://github.com/mongodb-js/vscode/releases/tag/v1.15.1) - 2026-03-09
+
+Edit the release notes before publishing.
+
+## What's Changed
+* fix: just hide the total count rather than displaying N/A VSCODE-765 by @lerouxb in https://github.com/mongodb-js/vscode/pull/1276
+
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.15.0...v1.15.1
+
+
+## [v1.15.0](https://github.com/mongodb-js/vscode/releases/tag/v1.15.0) - 2026-03-09
+
+## What's Changed
+
+* a new data browser for viewing documents in a collection
+ - list controls 
+ - change sort order
+ - change the number per page
+ - paginate through results
+ - insert document
+ - delete documents
+ - per document controls
+ - copy to clipboard
+ - edit document
+ - clone document
+ - delete document
+* open playground cursor results in the new data browser with most of the same new list controls
+* better document titles
+* the default document format is now shell syntax (matching playgrounds, mongosh, compass, etc.)
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.14.6...v1.15.0
+
+
 ## [v1.14.6](https://github.com/mongodb-js/vscode/releases/tag/v1.14.6) - 2026-01-15
 
 ## What's Changed
@@ -358,47 +392,5 @@
 * @github-actions made their first contribution in https://github.com/mongodb-js/vscode/pull/581
 
 **Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.2.0...v1.2.1
-
-
-## [v1.2.0](https://github.com/mongodb-js/vscode/releases/tag/v1.2.0) - 2023-08-15
-
-## What's Changed
-* feat: added Export to Go support VSCODE-411 by @GaurabAryal in https://github.com/mongodb-js/vscode/pull/567
-* chore: only load keytar during the migration process VSCODE-450 by @kmruiz in https://github.com/mongodb-js/vscode/pull/572
-* fix: adopt dns result order changes VSCODE-458 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/575
-
-## New Contributors
-* @GaurabAryal made their first contribution in https://github.com/mongodb-js/vscode/pull/567
-* @kmruiz made their first contribution in https://github.com/mongodb-js/vscode/pull/572
-
-**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.1.0...v1.2.0
-
-
-## [v1.1.0](https://github.com/mongodb-js/vscode/releases/tag/v1.1.0) - 2023-07-14
-
-# Important Information
-Starting with this release (v1.1.0), our Extension will use VS Code's SecretStorage api to store secrets for saved connections, instead of [Keytar](https://github.com/atom/node-keytar) which is now officially archived and not maintained anymore.
-
-To dig deeper please feel free to follow the links mentioned below:
-- [VS Code's announcement about removal of Keytar shim from VS Code](https://github.com/microsoft/vscode-discussions/discussions/662)
-- [Issue created to remove the direct dependency on Keytar from our extension](https://github.com/mongodb-js/vscode/issues/546)
-
-## What does this mean for our extension users?
-- Nothing much, just update to the latest version of our extension. The extension itself will take care of restoring secrets from Keytar to SecretStorage.
-
----
-
-### Change log
-* chore(ci): truncate origins for vulnerability reports in jira by @mcasimir in https://github.com/mongodb-js/vscode/pull/547
-* refactor: simplify constructor argument assignment VSCODE-441 by @Anemy in https://github.com/mongodb-js/vscode/pull/551
-* chore: bump minor dependencies by @alenakhineika in https://github.com/mongodb-js/vscode/pull/553
-* chore: added migration step to migrate keytar secrets to vscode SecretStorage - VSCODE-435 by @himanshusinghs in https://github.com/mongodb-js/vscode/pull/552
-* feat(tree-explorer): sort dbs in the tree by name by @Anemy in https://github.com/mongodb-js/vscode/pull/488
-* build(deps): bump json5 from 1.0.1 to 1.0.2 by @dependabot in https://github.com/mongodb-js/vscode/pull/463
-* chore: update semver and a few other dependencies, removes unused code - VSCODE-436, VSCODE-437 by @Anemy in https://github.com/mongodb-js/vscode/pull/556
-* chore: fix for ubuntu build failures by @himanshusinghs in https://github.com/mongodb-js/vscode/pull/561
-
-
-**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.0.2...v1.1.0
 
 
