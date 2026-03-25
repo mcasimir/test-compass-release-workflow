@@ -2,8 +2,6 @@
 
 ## [v1.15.1](https://github.com/mongodb-js/vscode/releases/tag/v1.15.1) - 2026-03-09
 
-Edit the release notes before publishing.
-
 ## What's Changed
 * fix: just hide the total count rather than displaying N/A VSCODE-765 by @lerouxb in https://github.com/mongodb-js/vscode/pull/1276
 
