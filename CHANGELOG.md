@@ -1,5 +1,24 @@
 # Change Log
 
+## [v1.16.1](https://github.com/mongodb-js/vscode/releases/tag/v1.16.1) - 2026-07-14
+
+Edit the release notes before publishing.
+
+## What's Changed
+
+* fix: pass telemetry status to MCP server VSCODE-763 by @nirinchev in https://github.com/mongodb-js/vscode/pull/1302
+* fix: show error message if connection closed VSCODE-770 by @tculig in https://github.com/mongodb-js/vscode/pull/1299
+* fix: With an empty collection we should show 0-0 instead of 1-1 VSCODE-771 by @tculig in https://github.com/mongodb-js/vscode/pull/1295
+* fix: add the missing globals we use to the playground templates by @lerouxb in https://github.com/mongodb-js/vscode/pull/1306
+* fix: undefined query should work like null query VSCODE-774 by @lerouxb in https://github.com/mongodb-js/vscode/pull/1307
+* feat(mcp): deviceId in appName passed to embedded MCP server VSCODE-709 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/1309
+* feat: guard remote code execution VSCODE-759 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/1310
+* fix: device id drift between devtools products and altas cli COMPASS-10690 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/1316
+
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.16.0...v1.16.1
+
+
 ## [v1.16.0](https://github.com/mongodb-js/vscode/releases/tag/v1.16.0) - 2026-03-28
 
 ## What's Changed
@@ -375,16 +394,5 @@
 * @shaketbaby made their first contribution in https://github.com/mongodb-js/vscode/pull/633
 
 **Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.3.1...v1.4.0
-
-
-## [v1.3.1](https://github.com/mongodb-js/vscode/releases/tag/v1.3.1) - 2023-10-09
-
-## What's Changed
-* fix(playgrounds): stringify non-string types for playground output VSCODE-466 by @Anemy in https://github.com/mongodb-js/vscode/pull/590
-* feat: update mongosh to 2.0.0 and driver to 6.0.0 VSCODE-453 by @addaleax in https://github.com/mongodb-js/vscode/pull/592
-* feat(autocomplete): introduce $vectorSearch aggregation stage to 7.1 and 7.0.x COMPASS-7064 by @mcasimir in https://github.com/mongodb-js/vscode/pull/593
-* fix: resolve SRV hostname before passing it to mongodb-cloud-info VSCODE-442 by @addaleax in https://github.com/mongodb-js/vscode/pull/594
-
-**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.2.1...v1.3.1
 
 
