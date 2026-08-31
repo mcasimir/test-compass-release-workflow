@@ -1,5 +1,33 @@
 # Change Log
 
+## [v1.17.0](https://github.com/mongodb-js/vscode/releases/tag/v1.17.0) - 2026-08-27
+
+## What's Changed
+* chore(deps): bump @vscode/test-electron to v3.1.0 for binary resolution by @Anemy in https://github.com/mongodb-js/vscode/pull/1322
+* chore: update mongodb-schema to use new published package COMPASS-10911 by @dudaschar in https://github.com/mongodb-js/vscode/pull/1325
+* chore(deps): run pnpm install for lock file duplicate key by @Anemy in https://github.com/mongodb-js/vscode/pull/1327
+* feat(playgrounds): remove export to language VSCODE-789 by @Anemy in https://github.com/mongodb-js/vscode/pull/1321
+* feat: use ECR for signing image DEVPROD-34208 by @fetsko in https://github.com/mongodb-js/vscode/pull/1328
+* fix(participant): copilot chat participant model not found error VSCODE-791 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/1332
+* feat(data-browser): add setting to view documents in native VSCode editors VSCODE-776 by @Anemy in https://github.com/mongodb-js/vscode/pull/1311
+* fix(shell): detect PowerShell 7 (pwsh) when launching the shell VSCODE-797 by @mongodb-sage-bot[bot] in https://github.com/mongodb-js/vscode/pull/1335
+* chore(telemetry): track view format VSCODE-783 by @Anemy in https://github.com/mongodb-js/vscode/pull/1313
+* chore(ci): skip changelog task if no prs, don't fail by @Anemy in https://github.com/mongodb-js/vscode/pull/1338
+* chore(ci): pin actions and bump for node by @Anemy in https://github.com/mongodb-js/vscode/pull/1339
+* fix(deps): bump query parser for code and dbref changes VSCODE-807 by @Anemy in https://github.com/mongodb-js/vscode/pull/1337
+* build: sign vsix fails VSCODE-809 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/1342
+* fix(deps): dedupe react dom VSCODE-810 by @Anemy in https://github.com/mongodb-js/vscode/pull/1344
+* fix(deps): bump compass components to avoid dupes, fix file selection VSCODE-811 by @Anemy in https://github.com/mongodb-js/vscode/pull/1345
+* chore(deps): remove unnecessary overrides in package.json by @Anemy in https://github.com/mongodb-js/vscode/pull/1348
+
+## New Contributors
+* @dudaschar made their first contribution in https://github.com/mongodb-js/vscode/pull/1325
+* @fetsko made their first contribution in https://github.com/mongodb-js/vscode/pull/1328
+* @mongodb-sage-bot[bot] made their first contribution in https://github.com/mongodb-js/vscode/pull/1335
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.16.1...v1.17.0
+
+
 ## [v1.16.1](https://github.com/mongodb-js/vscode/releases/tag/v1.16.1) - 2026-07-14
 
 Edit the release notes before publishing.
@@ -370,29 +398,5 @@ Edit the release notes before publishing.
 * @pulkitkalra-mdb made their first contribution in https://github.com/mongodb-js/vscode/pull/654
 
 **Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.4.0...v1.5.0
-
-
-## [v1.4.0](https://github.com/mongodb-js/vscode/releases/tag/v1.4.0) - 2024-01-09
-
-## What's Changed
-* feat: send logs to a LogOutputChannel VSCODE-429 by @baileympearson in https://github.com/mongodb-js/vscode/pull/616
-* feat: enable language server logs to be opened as a log file VSCODE-429 by @baileympearson in https://github.com/mongodb-js/vscode/pull/618
-* fix(explorer): auto-open connection when done connecting, fix auto open on delete VSCODE-325 VSCODE-398 by @Anemy in https://github.com/mongodb-js/vscode/pull/619
-* feat: adds a new overview screen based on LeafyGreen components VSCODE-485 by @himanshusinghs in https://github.com/mongodb-js/vscode/pull/617
-* chore(playground): codelens for active connection will inform about default connected database VSCODE-316 by @himanshusinghs in https://github.com/mongodb-js/vscode/pull/621
-* feat(webview): use Compass' connection form in the new overview page VSCODE-488 by @Anemy in https://github.com/mongodb-js/vscode/pull/622
-* chore(connections): remove keytar, keytar migration, and connection model migration VSCODE-499 by @Anemy in https://github.com/mongodb-js/vscode/pull/625
-* chore: add connection storage, simplify connection controller and storage controller interfaces by @Anemy in https://github.com/mongodb-js/vscode/pull/627
-* chore: update segment client VSCODE-498, VSCODE-501 by @mcasimir in https://github.com/mongodb-js/vscode/pull/626
-* chore(ci): sign vsix file VSCODE-493 by @mcasimir in https://github.com/mongodb-js/vscode/pull/632
-* feat(webview): update feature flag to always show new connection form VSCODE-490 by @Anemy in https://github.com/mongodb-js/vscode/pull/637
-* feat: add OIDC auth support, enable in new form VSCODE-354 by @Anemy in https://github.com/mongodb-js/vscode/pull/630
-* VSCODE-504: streams support in playgrounds by @shaketbaby in https://github.com/mongodb-js/vscode/pull/633
-
-## New Contributors
-* @baileympearson made their first contribution in https://github.com/mongodb-js/vscode/pull/616
-* @shaketbaby made their first contribution in https://github.com/mongodb-js/vscode/pull/633
-
-**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.3.1...v1.4.0
 
 
