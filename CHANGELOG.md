@@ -1,5 +1,18 @@
 # Change Log
 
+## [v1.17.1](https://github.com/mongodb-js/vscode/releases/tag/v1.17.1) - 2026-09-03
+
+## What's Changed
+* fix(launch-mongo-shell): quote connection string when launching via cmd VSCODE-796. Addresses [CVE-1436](https://jira.mongodb.org/browse/CVE-1436) Arbitrary command execution via shell-expanded connection string in Launch MongoDB Shell terminal by @ivandevp in https://github.com/mongodb-js/vscode/pull/1356
+* fix(connections): show redacted connection string in confirmation modal. Addresses [CVE-1436](https://jira.mongodb.org/browse/CVE-1436) Arbitrary command execution via shell-expanded connection string in Launch MongoDB Shell terminal VSCODE-798 by @ivandevp in https://github.com/mongodb-js/vscode/pull/1359
+* fix(connections): wrap the connection string in the confirmation modal VSCODE-820 by @ivandevp in https://github.com/mongodb-js/vscode/pull/1360
+
+## New Contributors
+* @ivandevp made their first contribution in https://github.com/mongodb-js/vscode/pull/1356
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.17.0...v1.17.1
+
+
 ## [v1.17.0](https://github.com/mongodb-js/vscode/releases/tag/v1.17.0) - 2026-08-27
 
 ## What's Changed
@@ -379,24 +392,5 @@ Edit the release notes before publishing.
 * @benjlevesque made their first contribution in https://github.com/mongodb-js/vscode/pull/700
 
 **Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.5.0...v1.6.0
-
-
-## [v1.5.0](https://github.com/mongodb-js/vscode/releases/tag/v1.5.0) - 2024-01-24
-
-## What's Changed
-* VSCODE-505: stream support in UI by @shaketbaby in https://github.com/mongodb-js/vscode/pull/643
-* feat(webview): use new connection form, remove old form VSCODE-491 by @Anemy in https://github.com/mongodb-js/vscode/pull/636
-* fix: add explicit ordering for stream processor context menu actions by @pulkitkalra-mdb in https://github.com/mongodb-js/vscode/pull/654
-* chore: close connection string input when opening form VSCODE-507 by @Anemy in https://github.com/mongodb-js/vscode/pull/656
-* fix: ensure extension output populates ObjectIds in stream by @pulkitkalra-mdb in https://github.com/mongodb-js/vscode/pull/657
-* feat(connect-form): add OIDC device auth flow with preference VSCODE-503 by @Anemy in https://github.com/mongodb-js/vscode/pull/658
-* feat(connections): add edit connection context menu action VSCODE-406 by @Anemy in https://github.com/mongodb-js/vscode/pull/655
-* chore(deps): update mongodb and devtools dependencies by @Anemy in https://github.com/mongodb-js/vscode/pull/662
-* chore: cancel connection attempt when removing connection, update assert to expect in webview and connection controller tests by @Anemy in https://github.com/mongodb-js/vscode/pull/667
-
-## New Contributors
-* @pulkitkalra-mdb made their first contribution in https://github.com/mongodb-js/vscode/pull/654
-
-**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.4.0...v1.5.0
 
 
