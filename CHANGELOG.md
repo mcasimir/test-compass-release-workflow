@@ -3,9 +3,9 @@
 ## [v1.17.1](https://github.com/mongodb-js/vscode/releases/tag/v1.17.1) - 2026-09-03
 
 ## What's Changed
-* fix(launch-mongo-shell): quote connection string when launching via cmd VSCODE-796. Addresses [CVE-1436](https://jira.mongodb.org/browse/CVE-1436) Arbitrary command execution via shell-expanded connection string in Launch MongoDB Shell terminal by @ivandevp in https://github.com/mongodb-js/vscode/pull/1356
-* fix(connections): show redacted connection string in confirmation modal. Addresses [CVE-1436](https://jira.mongodb.org/browse/CVE-1436) Arbitrary command execution via shell-expanded connection string in Launch MongoDB Shell terminal VSCODE-798 by @ivandevp in https://github.com/mongodb-js/vscode/pull/1359
-* fix(connections): wrap the connection string in the confirmation modal VSCODE-820 by @ivandevp in https://github.com/mongodb-js/vscode/pull/1360
+* fix(launch-mongo-shell): quote connection string when launching via cmd VSCODE-796. Addresses [CVE-2026-84967](https://nvd.nist.gov/vuln/detail/cve-2026-84967)
+* fix(connections): show redacted connection string in confirmation modal. Addresses [CVE-2026-84967](https://nvd.nist.gov/vuln/detail/cve-2026-84967)
+* fix(connections): wrap the connection string in the confirmation modal VSCODE-820
 
 ## New Contributors
 * @ivandevp made their first contribution in https://github.com/mongodb-js/vscode/pull/1356
