@@ -1,5 +1,21 @@
 # Change Log
 
+## [v1.18.1](https://github.com/mongodb-js/vscode/releases/tag/v1.18.1) - 2026-11-06
+
+Edit the release notes before publishing.
+
+## What's Changed
+* fix(snippets): switch Atlas Terraform template to service accounts and advanced_cluster by @xargom in https://github.com/mongodb-js/vscode/pull/1370
+* chore: update CHANGELOG.md by @mongodb-devtools-bot[bot] in https://github.com/mongodb-js/vscode/pull/1371
+* feat(parsing): sandboxed parsing COMPASS-11131 by @mabaasit in https://github.com/mongodb-js/vscode/pull/1373
+* chore: rename mongodb-build-info to @mongodb-js scope COMPASS-11197 by @ivandevp in https://github.com/mongodb-js/vscode/pull/1374
+* chore: snyk remediations VSCODE-784 by @kmruiz in https://github.com/mongodb-js/vscode/pull/1377
+* chore: publish extension with OIDC trusted publishing VSCODE-784 by @kmruiz in https://github.com/mongodb-js/vscode/pull/1375
+
+
+**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.18.0...v1.18.1
+
+
 ## [v1.18.0](https://github.com/mongodb-js/vscode/releases/tag/v1.18.0) - 2026-09-25
 
 ## What's Changed
@@ -381,15 +397,5 @@ Edit the release notes before publishing.
 * refactor(telemetry): use resolved srv from topology VSCODE-563 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/765
 
 **Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.6.1...v1.7.0
-
-
-## [v1.6.1](https://github.com/mongodb-js/vscode/releases/tag/v1.6.1) - 2024-07-15
-
-## What's Changed
-* fix: disconnect extension when server is closed VSCODE-536 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/734
-* chore(deps): bump mongosh VSCODE-548 by @mabaasit in https://github.com/mongodb-js/vscode/pull/752
-* fix: remove changelog from the bundle VSCODE-551 by @alenakhineika in https://github.com/mongodb-js/vscode/pull/758
-
-**Full Changelog**: https://github.com/mongodb-js/vscode/compare/v1.6.0...v1.6.1
 
 
